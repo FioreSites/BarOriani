@@ -33,6 +33,7 @@ body::-webkit-scrollbar{
 	z-index:10;
 }
 .navbar{
+	height:90px;
 	margin-left:auto;
 	margin-right:auto;
 	display:flex;
@@ -77,7 +78,7 @@ body::-webkit-scrollbar{
 	position:fixed;
 	left:0;
 	right:0;
-	bottom: calc(25px + env(safe-area-inset-bottom));
+	bottom:25px;
 	margin:auto;
 	z-index:4;
 	justify-content:center;
@@ -131,8 +132,8 @@ body::-webkit-scrollbar{
 }
 #Hero{
 	width:1400px;
-	padding:50px;
-	margin-top:50px;
+	padding:25px;
+	margin-top:75px;
 	margin-left:auto;
 	margin-right:auto;
 	display:flex;
@@ -370,54 +371,41 @@ body::-webkit-scrollbar{
 
 
 
-
-
-
-.intestazione{
-	height:35vh;
-	margin-top:75px;
-	text-align:center;
-	align-content:center;
-	color:var(--secondo);
-}
-.intestazione h2{
-	font-size:5rem;
-	font-weight:800;
-}
-.SaDoBi .prodotto{
-	border-color:rgba(255,255,255,0.35);
-	display:flex;
-	width:450px;
-}
-.SaDoBi .itemtext{	
-	color:var(--secondo);
-	padding:10px;
-	margin-right:0;
-	margin-left:auto;
-	align-content:center;
-}
-.SaDoBi button{
-	background-color:var(--terzo);
-	color:var(--primo);
-}
-.sezione{
+/*SALATO - DOLCE - BIBITE*/
+#HeroSaDoBi{
 	width:75%;
 	margin-left:auto;
 	margin-right:auto;
-	margin-bottom:75px;
-	color:var(--secondo);
-}
-.sezione h2{
-	font-size:1.75rem;
-	margin-bottom:35px;
-}
-.cont{
+	margin-top:90px;
 	display:flex;
-	flex-wrap:wrap;
-	justify-content:center;
-	gap:20px;
 }
-
+.HeroSaDoBi-text{
+	width:100%;
+	margin-top:75px;
+	text-align:center;
+}
+.HeroSaDoBi-text h1{
+	font-size:2.5rem;
+	font-weight:300;
+}
+.HeroSaDoBi-text h2{
+	font-size:2.5rem;
+	font-weight:300;
+}
+.HeroSaDoBi-text span{
+	font-size:4rem;
+	font-weight:800;
+	text-transform:uppercase;
+}
+.HeroSaDoBi-img{
+	width:100%;
+	display:flex;
+}
+.HeroSaDoBi-img img{
+	width:350px;
+	margin-left:auto;
+	margin-right:auto;
+}
 
 
 @media (max-width: 1400px){
@@ -532,3 +520,4 @@ body::-webkit-scrollbar{
 		height:100px;
 	}
 }
+

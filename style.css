@@ -72,7 +72,8 @@ body::-webkit-scrollbar{
 }
 #NavMenu{
 	display:flex;
-	width:375px;
+	width:100%;
+	max-width:375px;
 	position:fixed;
 	left:0;
 	right:0;
@@ -443,84 +444,91 @@ body::-webkit-scrollbar{
 }
 
 @media (max-width: 700px){
+	.tab{
+		font-size:0.8rem;
+	}
+	#cart{
+		width:20px;
+		height:20px;
+	}
+
+
+	.navbar{
+		padding:20px 20px;
+	}
+	.navbar h1{
+		font-size:1.25rem;
+		margin-left:5px;
+	}
+	.navbar img{
+		height:40px;
+		width:40px;
+	}
+	#account-icon{
+		margin-left:5px;
+	}
+	#info h4{
+		font-size:0.75rem;
+	}
+	#info p{
+		font-size:0.6rem;
+	}
+
+
+	.OFFERTEcarousel{
+		border-radius:20px;
+	}
 	#Hero{
 		width:100%;
-		aspect-ratio: 21/9;
-		padding: 0 20px;
-	}
-	#Hero h1{
-		font-size:2.25rem;
-	}
-	#Hero h2{
-		font-size:2rem;
-	}
-	#InEvidenza{
-		width:100%;
-		padding: 0 20px;
-	}
-	#InEvidenza h2{
-		font-size:1.5rem;
+		padding: 35px 20px;
 	}
 	.carousel-arrow{
 		display: none;
 	}
+	.container{
+		width:95%;
+	}
 	.carousel{
 		padding:0px;
-		justify-content:center;
-	}
-	.buono{
-		width:400px;
-		height:200px;
-	}
-	.prodotto{
-		width:200px;
-	}
-	.prodotto img{
-		width:165px;
-		height:165px;
-	}
-	.prodotto h3{
-		font-size:0.95rem;
-	}
-	.prodotto p{
-		font-size:1.20rem;
-	}
-	.prodotto button{
-		font-size:0.70rem;
-	}
-	
-	.navbar{
-		padding:20px 20px;
+		justify-content:flex-start;
 	}
 	.carousel{
 	  mask-image: linear-gradient(to right, transparent 0, black 0px, black calc(100% - 0px), transparent 100%);
 	}
-	#new{
+	
+	.QuickProdotto{
+		width:90px;
+	}
+	.QuickProdotto h3{
+		font-size:0.9rem;
+	}
+	.QuickProdotto img{
+		height:40px;
+	}
+
+
+	#InEvidenza{
 		width:100%;
+		padding: 0 10px;
 	}
-	#new h2{
-	font-size:2rem;
+	#InEvidenza h2{
+		font-size:2rem;
 	}
-	#new h5{
-		font-size:0.85rem;
+	.InEvidenzaProdotto{
+		width:150px;
+		border-radius:20px;
+		margin:10px;
+		padding:10px;
 	}
-	.heroimg{
-		display:none;
+	.InEvidenzaProdotto h3{
+		font-size:0.75rem;
 	}
-	.proposte .prodotto{
-		width:375px;
+	.aggiungi{
+		height:25px;
+		padding:0 7px;
+		font-size:1.25rem;
 	}
-	.SaDoBi .prodotto{
-		width:375px;
-	}
-	.intestazione h2{		
-		font-size:2.75rem;
-	}
-	.sezione{
-		width:100%;
-		padding: 0 20px;
-	}
-	.sezione h2{
-		font-size:1.5rem;
+	.InEvidenzaProdotto img{
+		height:100px;
 	}
 }

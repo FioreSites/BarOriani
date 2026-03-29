@@ -439,6 +439,7 @@ body::-webkit-scrollbar{
 	}
 	.InEvidenzaProdotto img{
 		height:200px;
+	}
 }
 
 @media (max-width: 700px){
@@ -492,12 +493,7 @@ body::-webkit-scrollbar{
 		padding:20px 20px;
 	}
 	.carousel{
-	  mask-image: linear-gradient(to right,
-		transparent 0,
-		black 0px,
-		black calc(100% - 0px),
-		transparent 100%
-	  );
+	  mask-image: linear-gradient(to right, transparent 0, black 0px, black calc(100% - 0px), transparent 100%);
 	}
 	#new{
 		width:100%;

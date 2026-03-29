@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Lexend:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Potta+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">		<title>Bar Oriani - Menu</title>
+		<link rel="icon" href="./img/Logo.ico">
+	</head>
+	<body>
+		<nav id="NavMenu">
+			<ul class="slider">
+				<li><a class="tab" href="#home" data-link="home">Home</a></li>
+				<li><a class="tab" href="#salato" data-link="salato">Salato</a></li>
+				<li><a class="tab" href="#dolce" data-link="dolce">Dolce</a></li>
+				<li><a class="tab" href="#bevande" data-link="bevande">Bibite</a></li>
+			</ul>
+			<div style="width:15px"></div>
+			<div class="slider">
+				<a class="tabCart" href=""><img id="cart" src="./img/WCarrello.png" alt="logo"></a>
+			</div>
+		</nav>
+		<section class="navsection">
+			<div class="navbar">
+				<div>
+					<img src="./img/LogoBlack.png" alt="logo">
+					<h1>Bar Oriani</h1>
+				</div>
+				<div>
+					<div id="info">
+						<h4>Ciao, Nome</h4>
+						<p>5000,00€</p>
+					</div>
+					<img id="account-icon" src="./img/profile.jpg" alt="immagine profilo">
+				</div>
+			</div>
+		</section>
+		
+		<section class="contenitore-slider" aria-label="Menu categorie">
+			<section id="home" class="screen">
+				<section id="Hero">
+					<div class="OFFERTEcarousel">
+						<div class="slides">
+							<img src="https://www.burgerking.it/assets/img/console/carousel/slides/620_desktop_it.png?v=1762767561" alt="Game screenshot 2">
+							<img src="./img/wallpaper.jpg" alt="Game screenshot 1">
+						</div>
+						<button class="prev">&#10094;</button>
+						<button class="next">&#10095;</button>
+					</div>
+				</section>
+				<section id="QuickChoice">
+					<div class="container">
+						<button class="carousel-arrow left" type="button" aria-label="Scorri a sinistra">&#129168</button>
+						<div class="carousel" id="carousel">
+							<article>
+								<div class="QuickProdotto">
+									<a href="#panini" class="quick-card-link"></a>
+									<img src="./img/hero1.png">
+									<h3>Panini</h3>
+								</div>
+							</article>
+							<article>
+								<div class="QuickProdotto">
+									<a href="prodotto.php?id=1" class="quick-card-link"></a>
+									<img src="./img/hero1.png">
+									<div class="itemtext">
+										<h3>Snack</h3>
+									</div>
+								</div>
+							</article>
+							<article>
+								<div class="QuickProdotto">
+									<a href="prodotto.php?id=1" class="quick-card-link"></a>
+									<img src="./img/hero1.png">
+									<div class="itemtext">
+										<h3>Piadine</h3>
+									</div>
+								</div>
+							</article>
+							<article>
+								<div class="QuickProdotto">
+									<a href="prodotto.php?id=1" class="quick-card-link"></a>
+									<img src="./img/hero1.png">
+									<div class="itemtext">
+										<h3>Dolci</h3>
+									</div>
+								</div>
+							</article>
+							<article>
+								<div class="QuickProdotto">
+									<a href="prodotto.php?id=1" class="quick-card-link"></a>
+									<img src="./img/hero1.png">
+									<div class="itemtext">
+										<h3>Gelati</h3>
+									</div>
+								</div>
+							</article>
+							<article>
+								<div class="QuickProdotto">
+									<a href="prodotto.php?id=1" class="quick-card-link"></a>
+									<img src="./img/hero1.png">
+									<div class="itemtext">
+										<h3>Bibite</h3>
+									</div>
+								</div>
+							</article>
+							<article>
+								<div class="QuickProdotto">
+									<a href="prodotto.php?id=1" class="quick-card-link"></a>
+									<img src="./img/hero1.png">
+									<div class="itemtext">
+										<h3>Caffetteria</h3>
+									</div>
+								</div>
+							</article>
+						</div>
+					<button class="carousel-arrow right" type="button" aria-label="Scorri a destra">&#129170</button>
+					</div>
+				</section>
+				<section id="InEvidenza">
+					<h2>In evidenza</h2>
+					<div class="InEvidenzaContainer">
+						<article>
+							<div class="InEvidenzaProdotto">
+								<a href="prodotto.php?id=1" class="evidenza-card-link"></a>
+								<img src="./img/hero1.png">
+								<div class="itemtext">
+									<h3>Panino solo cotoletta</h3>
+									<div class="text-spacer"></div>
+									<a href="" class="aggiungi">+</a>
+								</div>
+							</div>
+						</article>
+						<article>
+							<div class="InEvidenzaProdotto">
+								<a href="prodotto.php?id=1" class="evidenza-card-link"></a>
+								<img src="./img/hero1.png">
+								<div class="itemtext">
+									<h3>Panino solo cotoletta</h3>
+									<div class="text-spacer"></div>
+									<a href="" class="aggiungi">+</a>
+								</div>
+							</div>
+						</article>
+						<article>
+							<div class="InEvidenzaProdotto">
+								<a href="prodotto.php?id=1" class="evidenza-card-link"></a>
+								<img src="./img/hero1.png">
+								<div class="itemtext">
+									<h3>Panino solo cotoletta</h3>
+									<div class="text-spacer"></div>
+									<a href="" class="aggiungi">+</a>
+								</div>
+							</div>
+						</article>
+						<article>
+							<div class="InEvidenzaProdotto">
+								<a href="prodotto.php?id=1" class="evidenza-card-link"></a>
+								<img src="./img/hero1.png">
+								<div class="itemtext">
+									<h3>Panino solo cotoletta</h3>
+									<div class="text-spacer"></div>
+									<a href="" class="aggiungi">+</a>
+								</div>
+							</div>
+						</article>
+						<article>
+							<div class="InEvidenzaProdotto">
+								<a href="prodotto.php?id=1" class="evidenza-card-link"></a>
+								<img src="./img/hero1.png">
+								<div class="itemtext">
+									<h3>Panino solo cotoletta</h3>
+									<div class="text-spacer"></div>
+									<a href="" class="aggiungi">+</a>
+								</div>
+							</div>
+						</article>
+						<article>
+							<div class="InEvidenzaProdotto">
+								<a href="prodotto.php?id=1" class="evidenza-card-link"></a>
+								<img src="./img/hero1.png">
+								<div class="itemtext">
+									<h3>Panino solo cotoletta</h3>
+									<div class="text-spacer"></div>
+									<a href="" class="aggiungi">+</a>
+								</div>
+							</div>
+						</article>
+					</div>
+				</section>
+				<div class="spacer"></div>
+			</section>
+			<section id="salato" class="screen">
+				<section id="Hero">
+					<div>
+						<h1>Bisogno di una Pausa?</h1>
+						<h2>Sei nel posto <span>giusto!</span></h2>
+					</div>
+					<div class="heroimg">
+						<img src="./img/Hero1.png">
+					</div>
+				</section>
+				
+				<div class="sezione" id="panini">
+					<h2>I nostri panini:</h2>
+					<div class="cont">
+						<article class="SaDoBi">
+							<div class="prodotto">
+								<a href="prodotto.php?id=1" class="card-link"></a>
+								<img src="./img/hero.jpg">
+								<div class="itemtext">
+									<h3>Panino solo cotoletta</h3>
+									<p>2,60€</p>
+									<form method="POST" action="aggiungi.php">
+										<input type="hidden" name="id_prodotto" value="1">
+										<button type="submit">Aggiungi al carrello</button>
+									</form>
+								</div>
+							</div>
+						</article>
+						<article class="SaDoBi">
+							<div class="prodotto">
+								<a href="prodotto.php?id=1" class="card-link"></a>
+								<img src="./img/hero.jpg">
+								<div class="itemtext">
+									<h3>Panino solo cotoletta</h3>
+									<p>2,60€</p>
+									<form method="POST" action="aggiungi.php">
+										<input type="hidden" name="id_prodotto" value="1">
+										<button type="submit">Aggiungi al carrello</button>
+									</form>
+								</div>
+							</div>
+						</article>
+						<article class="SaDoBi">
+							<div class="prodotto">
+								<a href="prodotto.php?id=1" class="card-link"></a>
+								<img src="./img/hero.jpg">
+								<div class="itemtext">
+									<h3>Panino solo cotoletta</h3>
+									<p>2,60€</p>
+									<form method="POST" action="aggiungi.php">
+										<input type="hidden" name="id_prodotto" value="1">
+										<button type="submit">Aggiungi al carrello</button>
+									</form>
+								</div>
+							</div>
+						</article>
+						<article class="SaDoBi">
+							<div class="prodotto">
+								<a href="prodotto.php?id=1" class="card-link"></a>
+								<img src="./img/hero.jpg">
+								<div class="itemtext">
+									<h3>Panino solo cotoletta</h3>
+									<p>2,60€</p>
+									<form method="POST" action="aggiungi.php">
+										<input type="hidden" name="id_prodotto" value="1">
+										<button type="submit">Aggiungi al carrello</button>
+									</form>
+								</div>
+							</div>
+						</article>
+						<article class="SaDoBi">
+							<div class="prodotto">
+								<a href="prodotto.php?id=1" class="card-link"></a>
+								<img src="./img/hero.jpg">
+								<div class="itemtext">
+									<h3>Panino solo cotoletta</h3>
+									<p>2,60€</p>
+									<form method="POST" action="aggiungi.php">
+										<input type="hidden" name="id_prodotto" value="1">
+										<button type="submit">Aggiungi al carrello</button>
+									</form>
+								</div>
+							</div>
+						</article>
+						<article class="SaDoBi">
+							<div class="prodotto">
+								<a href="prodotto.php?id=1" class="card-link"></a>
+								<img src="./img/hero.jpg">
+								<div class="itemtext">
+									<h3>Panino solo cotoletta</h3>
+									<p>2,60€</p>
+									<form method="POST" action="aggiungi.php">
+										<input type="hidden" name="id_prodotto" value="1">
+										<button type="submit">Aggiungi al carrello</button>
+									</form>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+				<div class="sezione">
+					<h2>I nostri panini:</h2>
+					<div class="cont" style="margin-bottom:120px">
+						<article class="SaDoBi">
+							<div class="prodotto">
+								<a href="prodotto.php?id=1" class="card-link"></a>
+								<img src="./img/hero.jpg">
+								<div class="itemtext">
+									<h3>Panino solo cotoletta</h3>
+									<p>2,60€</p>
+									<form method="POST" action="aggiungi.php">
+										<input type="hidden" name="id_prodotto" value="1">
+										<button type="submit">Aggiungi al carrello</button>
+									</form>
+								</div>
+							</div>
+						</article>
+						<article class="SaDoBi">
+							<div class="prodotto">
+								<a href="prodotto.php?id=1" class="card-link"></a>
+								<img src="./img/hero.jpg">
+								<div class="itemtext">
+									<h3>Panino solo cotoletta</h3>
+									<p>2,60€</p>
+									<form method="POST" action="aggiungi.php">
+										<input type="hidden" name="id_prodotto" value="1">
+										<button type="submit">Aggiungi al carrello</button>
+									</form>
+								</div>
+							</div>
+						</article>
+						<article class="SaDoBi">
+							<div class="prodotto">
+								<a href="prodotto.php?id=1" class="card-link"></a>
+								<img src="./img/hero.jpg">
+								<div class="itemtext">
+									<h3>Panino solo cotoletta</h3>
+									<p>2,60€</p>
+									<form method="POST" action="aggiungi.php">
+										<input type="hidden" name="id_prodotto" value="1">
+										<button type="submit">Aggiungi al carrello</button>
+									</form>
+								</div>
+							</div>
+						</article>
+						<article class="SaDoBi">
+							<div class="prodotto">
+								<a href="prodotto.php?id=1" class="card-link"></a>
+								<img src="./img/hero.jpg">
+								<div class="itemtext">
+									<h3>Panino solo cotoletta</h3>
+									<p>2,60€</p>
+									<form method="POST" action="aggiungi.php">
+										<input type="hidden" name="id_prodotto" value="1">
+										<button type="submit">Aggiungi al carrello</button>
+									</form>
+								</div>
+							</div>
+						</article>
+						<article class="SaDoBi">
+							<div class="prodotto">
+								<a href="prodotto.php?id=1" class="card-link"></a>
+								<img src="./img/hero.jpg">
+								<div class="itemtext">
+									<h3>Panino solo cotoletta</h3>
+									<p>2,60€</p>
+									<form method="POST" action="aggiungi.php">
+										<input type="hidden" name="id_prodotto" value="1">
+										<button type="submit">Aggiungi al carrello</button>
+									</form>
+								</div>
+							</div>
+						</article>
+						<article class="SaDoBi">
+							<div class="prodotto">
+								<a href="prodotto.php?id=1" class="card-link"></a>
+								<img src="./img/hero.jpg">
+								<div class="itemtext">
+									<h3>Panino solo cotoletta</h3>
+									<p>2,60€</p>
+									<form method="POST" action="aggiungi.php">
+										<input type="hidden" name="id_prodotto" value="1">
+										<button type="submit">Aggiungi al carrello</button>
+									</form>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section id="dolce" class="screen">
+				<h1>Dolce</h1>
+				<div class="spacer">
+				</div>
+			</section>
+			<section id="bevande" class="screen">
+				<h1>Bevande</h1>
+				<div class="spacer">
+				</div>
+			</section>
+		</section>
+	</body>
+	<script>
+		const sections = [...document.querySelectorAll(".screen")];
+		const links    = document.querySelectorAll(".tab");
+
+		let currentActive = null;
+
+		function updateActive() {
+			let closestSection = null;
+			let closestOffset  = Infinity;
+
+			sections.forEach(section => {
+			const rect = section.getBoundingClientRect();
+
+			if (rect.right > 0 && rect.left < window.innerWidth) {
+			const offset = Math.abs(rect.left);
+
+			if (offset < closestOffset) {
+				closestOffset = offset;
+				closestSection = section;
+				}
+			}
+			});
+
+			if (closestSection && closestSection.id !== currentActive) {
+			  currentActive = closestSection.id;
+
+			  links.forEach(a => a.classList.remove("active"));
+			  document
+				.querySelector(`.tab[data-link="${currentActive}"]`)
+				?.classList.add("active");
+			}
+		  }
+
+		  window.addEventListener("scroll", updateActive, { passive: true });
+		  
+		  document.body.addEventListener("scroll", updateActive, { passive: true });
+		  links.forEach(link => {
+			  link.addEventListener("click", () => {
+				requestAnimationFrame(() => {
+				  requestAnimationFrame(updateActive);
+				});
+			  });
+			});
+		  
+		  updateActive();
+
+		const carousel = document.getElementById("carousel");
+		const btnLeft = document.querySelector(".carousel-arrow.left");
+		const btnRight = document.querySelector(".carousel-arrow.right");
+
+		function getStep() {
+		  const first = carousel.children[0];
+		  if (!first) return 0;
+
+		  const styles = getComputedStyle(carousel);
+		  const gap = parseFloat(styles.columnGap || styles.gap) || 0;
+
+		  return first.getBoundingClientRect().width + gap;
+		}
+
+		btnRight.addEventListener("click", () => {
+		  carousel.scrollBy({ left: getStep(), behavior: "smooth" });
+		});
+
+		btnLeft.addEventListener("click", () => {
+		  carousel.scrollBy({ left: -getStep(), behavior: "smooth" });
+		});
+		
+		document.querySelectorAll(".OFFERTEcarousel").forEach(carousel => {
+	  const slides = carousel.querySelectorAll(".slides img");
+	  const prev = carousel.querySelector(".prev");
+	  const next = carousel.querySelector(".next");
+	  let index = 0;
+
+	  function showSlide(i) {
+		slides.forEach((img, k) => img.classList.toggle("active", k === i));
+	  }
+
+	  prev.addEventListener("click", () => {
+		index = (index - 1 + slides.length) % slides.length;
+		showSlide(index);
+	  });
+
+	  next.addEventListener("click", () => {
+		index = (index + 1) % slides.length;
+		showSlide(index);
+	  });
+
+	  showSlide(index);
+	});
+	</script>
+</html>

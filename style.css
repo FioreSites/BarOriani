@@ -1,0 +1,542 @@
+*{
+	font-family:"Shantell Sans", sans-serif;
+	box-sizing:border-box;
+	padding:0;
+	margin:0;
+	scroll-behavior:smooth;
+}
+:root{
+	--primo: #000;
+	--secondo: #fff;
+	--terzo: #0cad8a;
+	--background: #e4e4e4;
+	--BackgroundQuick: #ddd;
+}
+html{
+	overflow-x:auto;
+}
+body{
+	background-color:var(--background);
+	overflow-x:auto;
+	overflow-y:hidden;
+	scroll-snap-type:x mandatory;
+	scroll-behavior:smooth;
+	scrollbar-width:none;
+}
+body::-webkit-scrollbar{
+	display:none;
+}
+
+.navsection{
+	position:fixed;
+	width:100%;
+	z-index:10;
+}
+.navbar{
+	margin-left:auto;
+	margin-right:auto;
+	display:flex;
+	padding:20px 50px;
+	align-items:center;
+	justify-content:space-between;
+	background-color:var(--background);
+	color:black;
+}
+.navbar div{
+	display:flex;
+	align-items:center;
+}
+.navbar h1{
+	font-size:2rem;
+	margin-left:10px;
+}
+.navbar img{
+	height:50px;
+	width:50px;
+}
+#account-icon{
+	border-radius:100px;
+	margin-left:10px;
+}
+#info{
+	display:block;
+	text-align:end;
+}
+#info h4{
+	font-weight:600;
+	font-size:1.05rem;
+}
+#info p{
+	font-weight:300;
+	font-size:0.9rem;
+}
+#NavMenu{
+	display:flex;
+	width:375px;
+	position:fixed;
+	left:0;
+	right:0;
+	bottom: calc(25px + env(safe-area-inset-bottom));
+	margin:auto;
+	z-index:4;
+	justify-content:center;
+}
+.slider{
+	display:flex;
+	border-radius:20px;
+	box-shadow:1px 4px 15px rgba(0,0,0,0.1);
+	background-color:rgba(0,0,0,0.1);
+	backdrop-filter:blur(20px);
+	overflow:hidden;
+}
+.slider ul{
+	display:flex;
+	text-align:center;
+}
+.slider li{
+	flex:1;
+	list-style:none;
+	border-radius:18px;
+	overflow:hidden;
+}
+.slider a:hover{
+	filter:brightness(0.9);
+}
+#cart{
+	width:25px;
+	height:25px;
+}
+.tab{
+	display:block;
+	text-decoration:none;
+	color:white;
+	padding:15px;
+	font-weight:300;
+	transition:all 0.2s;
+}
+.tab.active{
+	background:var(--terzo);
+	color:var(--secondo);
+	font-weight:600;
+	padding:15px 10px;
+	text-align:center;
+}
+.tabCart{
+	display:block;
+	text-decoration:none;
+	align-content:center;
+	padding:10px 15px;
+	transition:all 0.2s;
+}
+#Hero{
+	width:1400px;
+	padding:50px;
+	margin-top:50px;
+	margin-left:auto;
+	margin-right:auto;
+	display:flex;
+	align-items:center;
+}
+
+.OFFERTEcarousel {
+	position:relative;
+	width:100%;
+	height:100%;
+	margin-top:10px;
+	overflow:hidden;
+	border-radius:35px;
+	box-shadow:1px 2px 20px rgba(0,0,0,0.35);
+}
+.OFFERTEcarousel .slides img {
+	width:100%;
+	aspect-ratio: 21/9;
+	object-fit:cover;
+	display:none;
+}
+
+.OFFERTEcarousel .slides img.active {
+	display:block;
+}
+
+.OFFERTEcarousel button {
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	background:rgba(0,0,0,0);
+	color:rgba(255,255,255,0.75);
+	border:none;
+	font-size:45px;
+	padding:8px 12px;
+	cursor:pointer;
+	border-radius:50%;
+	transition:all 0.2s;
+}
+
+.OFFERTEcarousel .prev {left:10px;}
+.OFFERTEcarousel .next {right:10px;}
+
+.OFFERTEcarousel button:hover{
+	color:rgba(255,255,255,1);
+}
+
+
+.contenitore-slider{
+	display:flex;
+}
+.contenitore-slider section{
+	padding:0;
+	margin:0;
+}
+.screen{
+	width:100vw;
+	height:100vh;
+	flex:0 0 100vw;
+	scroll-snap-align:start;
+	overflow-y:auto;
+	box-sizing:border-box;
+}
+
+/*IN EVIDENZA e CAROSELLO*/
+
+#QuickChoice{
+	width:100%;
+	color:var(--secondo);
+	background-color:var(--BackgroundQuick);
+}
+.container{
+	width:75%;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+}
+/* CAROSELLO */
+.carousel{
+	display:flex;   /* mobile: card grande */
+	gap:0px;
+	overflow-x:auto;
+	overflow-y:hidden;
+	scroll-snap-type:x mandatory;
+	scroll-behavior:smooth;
+	scrollbar-width: none;
+	scroll-padding-left:20px;
+	scroll-padding-right:20px;
+	padding:0 20px;
+	justify-content:center;
+}
+.carousel::-webkit-scrollbar{
+	display: none;
+}
+.carousel article{
+	padding:30px 0;
+	display:flex
+}
+.carousel{
+  -webkit-mask-image: linear-gradient(to right,
+    transparent 0,
+    black 40px,
+    black calc(100% - 40px),
+    transparent 100%
+  );
+}
+/* ogni card deve agganciarsi allo snap */
+.carousel > *{
+	scroll-snap-align: start;
+}
+
+.carousel-arrow{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index:4;
+	width: 25px;
+	height: 25px;
+	border: 0;
+	border-radius:50px;
+	cursor: pointer;
+	font-size: 2.25rem;
+	font-weight: 600;
+	line-height: 20px;
+	background: rgba(0,0,0,0.55);
+	color: white;
+	display: none;
+	font-family:sans-serif;
+}
+
+.carousel-arrow.left{
+	left: -20px;
+	letter-spacing:5px;
+}
+
+.carousel-arrow.right{
+	right: -20px;
+	letter-spacing:-5px;
+}
+
+.QuickProdotto{
+	position:relative;
+	width:150px;
+	cursor:pointer;
+	color:black;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	transition:all 0.2s;
+}
+.QuickProdotto:hover{
+	scale:1.15;
+}
+.quick-card-link{
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+}
+.QuickProdotto h3{
+	font-size:1.15rem;
+	font-weight:300;
+}
+.QuickProdotto img{
+	height:55px;
+	object-fit:cover;	
+}
+.itemtext{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.text-spacer{
+	width:10px;
+}
+#InEvidenza{
+	text-align:center;
+	padding:25px;
+}
+#InEvidenza h2{
+	font-size:3.5rem;
+	padding:40px;
+	font-weight:200;
+}
+.InEvidenzaContainer{
+	width:1400px;
+	margin-left:auto;
+	margin-right:auto;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+.InEvidenzaProdotto{
+	position:relative;
+	width:350px;
+	box-shadow:1px 2px 15px rgba(0,0,0,0.1);
+	border-radius:25px;
+	border-bottom:solid 3px rgba(0,0,0,0);
+	margin:20px;
+	padding:10px;
+	cursor:pointer;
+	color:black;
+	text-align:center;
+	transition:all 0.2s;
+}
+.InEvidenzaProdotto h3{
+	font-size:1.5rem;
+	font-weight:300;
+}
+.aggiungi{
+	text-decoration:none;
+	color:white;
+	height:40px;
+	padding:0 13px;
+	align-content:center;
+	background-color:var(--terzo);
+	border-radius:50px;
+	font-size:1.75rem;
+	font-weight:700;
+	transition:all 0.2s;
+}
+.aggiungi:hover{
+	background-color:black;
+}
+.InEvidenzaProdotto img{
+	height:300px;
+	aspect-ratio:1/1;
+	object-fit:cover;
+}
+.InEvidenzaProdotto:hover{
+	border-bottom:solid 3px var(--terzo);
+}
+.spacer{
+	height:120px;
+}
+
+
+
+
+
+
+.intestazione{
+	height:35vh;
+	margin-top:75px;
+	text-align:center;
+	align-content:center;
+	color:var(--secondo);
+}
+.intestazione h2{
+	font-size:5rem;
+	font-weight:800;
+}
+.SaDoBi .prodotto{
+	border-color:rgba(255,255,255,0.35);
+	display:flex;
+	width:450px;
+}
+.SaDoBi .itemtext{	
+	color:var(--secondo);
+	padding:10px;
+	margin-right:0;
+	margin-left:auto;
+	align-content:center;
+}
+.SaDoBi button{
+	background-color:var(--terzo);
+	color:var(--primo);
+}
+.sezione{
+	width:75%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:75px;
+	color:var(--secondo);
+}
+.sezione h2{
+	font-size:1.75rem;
+	margin-bottom:35px;
+}
+.cont{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	gap:20px;
+}
+
+
+
+@media (max-width: 1400px){
+	#Hero{
+		width:100%;
+	}
+	.carousel{
+		padding:0px;
+		justify-content:flex-start;
+	}
+	.carousel-arrow{
+		display:grid;
+	}
+	.InEvidenzaContainer{
+		width:100%;
+		max-width:1000px;
+	}
+	.InEvidenzaProdotto{
+		width:250px;
+	}
+	.InEvidenzaProdotto img{
+		height:200px;
+}
+
+@media (max-width: 700px){
+	#Hero{
+		width:100%;
+		aspect-ratio: 21/9;
+		padding: 0 20px;
+	}
+	#Hero h1{
+		font-size:2.25rem;
+	}
+	#Hero h2{
+		font-size:2rem;
+	}
+	#InEvidenza{
+		width:100%;
+		padding: 0 20px;
+	}
+	#InEvidenza h2{
+		font-size:1.5rem;
+	}
+	.carousel-arrow{
+		display: none;
+	}
+	.carousel{
+		padding:0px;
+		justify-content:center;
+	}
+	.buono{
+		width:400px;
+		height:200px;
+	}
+	.prodotto{
+		width:200px;
+	}
+	.prodotto img{
+		width:165px;
+		height:165px;
+	}
+	.prodotto h3{
+		font-size:0.95rem;
+	}
+	.prodotto p{
+		font-size:1.20rem;
+	}
+	.prodotto button{
+		font-size:0.70rem;
+	}
+	
+	.navbar{
+		padding:20px 20px;
+	}
+	.carousel{
+	  mask-image: linear-gradient(to right,
+		transparent 0,
+		black 0px,
+		black calc(100% - 0px),
+		transparent 100%
+	  );
+	}
+	#new{
+		width:100%;
+	}
+	#new h2{
+	font-size:2rem;
+	}
+	#new h5{
+		font-size:0.85rem;
+	}
+	.heroimg{
+		display:none;
+	}
+	.proposte .prodotto{
+		width:375px;
+	}
+	.SaDoBi .prodotto{
+		width:375px;
+	}
+	.intestazione h2{		
+		font-size:2.75rem;
+	}
+	.sezione{
+		width:100%;
+		padding: 0 20px;
+	}
+	.sezione h2{
+		font-size:1.5rem;
+	}
+}
+
+@media (max-width: 1300px) and (min-width: 700px){
+	.heroimg{
+		display:none;
+	}
+	#Hero h1{
+		font-size:2.75rem;
+	}
+	#Hero h2{
+		font-size:2.5rem;
+	}
+}

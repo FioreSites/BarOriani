@@ -348,7 +348,8 @@ body::-webkit-scrollbar{
 	color:white;
 	height:40px;
 	padding:0 13px;
-	align-content:center;
+	display:flex;
+	align-items:center;
 	background-color:var(--terzo);
 	border-radius:50px;
 	font-size:1.75rem;
@@ -535,12 +536,6 @@ body::-webkit-scrollbar{
 		font-weight:700;
 		transition:all 0.2s;
 	}
-	.SaDoBi-aggiungi img{
-		height:20px;
-	}
-	.SaDoBi-aggiungi:hover{
-		background-color:black;
-	}
 }
 
 @media (max-width: 700px){
@@ -609,7 +604,6 @@ body::-webkit-scrollbar{
 
 	#InEvidenza{
 		width:100%;
-		padding: 0 10px;
 	}
 	#InEvidenza h2{
 		font-size:2rem;

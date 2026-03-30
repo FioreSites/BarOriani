@@ -78,7 +78,7 @@ body::-webkit-scrollbar{
 	position:fixed;
 	left:0;
 	right:0;
-	bottom:25px;
+	bottom: calc(25px + env(safe-area-inset-bottom));
 	margin:auto;
 	z-index:4;
 	justify-content:center;
@@ -311,6 +311,7 @@ body::-webkit-scrollbar{
 #InEvidenza{
 	text-align:center;
 	padding:25px;
+	padding-bottom:50px;
 }
 #InEvidenza h2{
 	font-size:3.5rem;
@@ -318,7 +319,7 @@ body::-webkit-scrollbar{
 	font-weight:200;
 }
 .InEvidenzaContainer{
-	width:1400px;
+	width:1300px;
 	margin-left:auto;
 	margin-right:auto;
 	display:flex;
@@ -366,7 +367,7 @@ body::-webkit-scrollbar{
 	border-bottom:solid 3px var(--terzo);
 }
 .spacer{
-	height:120px;
+	height:50px;
 }
 
 
@@ -406,6 +407,57 @@ body::-webkit-scrollbar{
 	margin-left:auto;
 	margin-right:auto;
 }
+.SaDoBi-categoria h2{
+	font-size:2.5rem;
+	font-weight:300;
+	text-align:center;
+}
+.SaDoBi-elenco{
+	width:1300px;
+	margin-left:auto;
+	margin-right:auto;
+	flex-wrap:wrap;
+	display:flex;
+	justify-content:center;
+	margin-top:35px;
+}
+.SaDoBi-container{
+	padding-top:25px;
+	padding-bottom:50px;
+}
+
+.descrizione h3{
+	font-size:1.25rem;
+}
+.descrizione p{
+	text-align:start;
+	padding:5px 20px 15px 20px;
+	font-weight:300;
+	font-size:0.9rem;
+	filter:opacity(0.8);
+}
+.SaDoBi-aggiungi{
+	text-decoration:none;
+	display:flex;
+	width: 125px;
+	height:40px;
+	color:white;
+	margin:0 auto 5px auto;;
+	align-items:center;
+	gap:10px;
+	justify-content:center;
+	background-color:var(--terzo);
+	border-radius:50px;
+	font-size:1rem;
+	font-weight:700;
+	transition:all 0.2s;
+}
+.SaDoBi-aggiungi img{
+	height:20px;
+}
+.SaDoBi-aggiungi:hover{
+	background-color:black;
+}
 
 
 @media (max-width: 1400px){
@@ -428,6 +480,66 @@ body::-webkit-scrollbar{
 	}
 	.InEvidenzaProdotto img{
 		height:200px;
+	}
+	
+	#HeroSaDoBi{
+		width:90%;
+	}
+	.HeroSaDoBi-text h1{
+		font-size:2rem;
+	}
+	.HeroSaDoBi-text h2{
+		font-size:2rem;
+	}
+	.HeroSaDoBi-text span{
+		font-size:3rem;
+	}
+	.HeroSaDoBi-img img{
+		width:300px;
+	}
+	.SaDoBi-categoria h2{
+		font-size:2.5rem;
+		font-weight:300;
+		text-align:center;
+	}
+	.SaDoBi-elenco{
+		width:100%;
+	}
+	.SaDoBi-container{
+		padding-top:25px;
+		padding-bottom:50px;
+	}
+	.descrizione h3{
+		font-size:1.25rem;
+	}
+	.descrizione p{
+		text-align:start;
+		padding:5px 20px 15px 20px;
+		font-weight:300;
+		font-size:0.75rem;
+		filter:opacity(0.8);
+	}
+	.SaDoBi-aggiungi{
+		text-decoration:none;
+		display:flex;
+		width: 125px;
+		height:40px;
+		color:white;
+		margin:0 auto 5px auto;;
+		align-items:center;
+		gap:10px;
+		justify-content:center;
+		background-color:var(--terzo);
+		border-radius:50px;
+		font-size:1rem;
+		font-weight:700;
+		transition:all 0.2s;
+	}
+	.SaDoBi-aggiungi img{
+		height:20px;
+	}
+	.SaDoBi-aggiungi:hover{
+		background-color:black;
 	}
 }
 
@@ -518,6 +630,46 @@ body::-webkit-scrollbar{
 	}
 	.InEvidenzaProdotto img{
 		height:100px;
+	}
+
+
+	#HeroSaDoBi{
+		margin-bottom:50px;
+	}
+	.HeroSaDoBi-text h1{
+		font-size:2rem;
+	}
+	.HeroSaDoBi-text h2{
+		font-size:2rem;
+	}
+	.HeroSaDoBi-text span{
+		font-size:3rem;
+	}
+	.HeroSaDoBi-img{
+		display:none;
+	}
+	.SaDoBi-categoria h2{
+		font-size:2rem;
+	}
+	.SaDoBi-elenco{
+		width:100%;
+	}
+	.descrizione h3{
+		font-size:0.75rem;
+	}
+	.descrizione p{
+		padding:5px 5px 15px 5px;
+		font-size:0.5rem;
+	}
+	.SaDoBi-aggiungi{
+		width: 100px;
+		height:30px;
+		margin:0 auto 5px auto;
+		gap:7px;
+		font-size:0.75rem;
+	}
+	.SaDoBi-aggiungi img{
+		height:15px;
 	}
 }
 

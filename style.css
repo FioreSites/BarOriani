@@ -124,9 +124,9 @@ body::-webkit-scrollbar{
 	text-align:center;
 }
 .tabCart{
-	display:block;
+	display:flex;
 	text-decoration:none;
-	align-content:center;
+	align-items:center;
 	padding:10px 15px;
 	transition:all 0.2s;
 }

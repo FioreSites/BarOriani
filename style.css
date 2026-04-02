@@ -556,6 +556,10 @@ body::-webkit-scrollbar{
 	.tab{
 		font-size:0.8rem;
 	}
+	.tabCart p{
+		margin-left:7px;
+		font-size:0.6rem;
+	}
 	#cart{
 		width:20px;
 		height:20px;
